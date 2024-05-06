@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+:root{
+    --maincolor:  rgb(0, 157, 255);
+}
+body{
+    overflow-x: hidden;
+}
+/* home start */
+.home{
+    background-color: rgba(105, 101, 101, 0.5);
+    height: 100vh;
+    width: 100%;
+    background-image: url('./img/trees-bg.png');
+    background-size: cover;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    height: 12.5vh;
+    align-items: center;
+}
+.menu-item{
+    list-style-type: none;
+}
+.menu-link{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+    transition: 0.4s;
+}
+.links{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+}
+.menu-link:hover{
+    color: var(--maincolor);
+}
+.center{
+    color: white;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center p{
+    width: 900px;
+    text-align: center;
+}
+.center h2{
+    text-transform: capitalize;
+    font-size: 38px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.center h2::before{
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color:var(--maincolor);
+}
+.btn{
+    color:  var(--maincolor);
+    padding: 10px 20px;
+    font-size: 23px;
+    margin-top: 20px;
+    border: 3px solid  var(--maincolor);
+    border-radius: 8px;
+    background-color: transparent;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12.5vh;
+}
+.box{
+    border: 2px solid white;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.box:nth-child(1){
+    background-color: var(--maincolor);
+}
+/* home end */
+
+
+
+/* Story start */
+#story{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    width: 950px;
+}
+.wrapper img{
+    margin-right: 75px;
+}
+
+.story_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    height: 75vh;
+    background-image: url("./img/story-bg.png");
+}
+.fa-regular{
+    color: white;
+    font-size: 100px;
+}
+.story_2 h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+/* Story end */
+
+
+/* Works start */
+.works{
+    height: 105vh;
+}
+.works .boxes{
+    height: 15vh;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.works .boxes .quti{
+    display: flex;
+}
+.works .boxes .quti p{
+    margin-right: 20px;
+}
+
+.people-say{
+    background-image: url("./img/team-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.people-say p{
+    width: 700px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.people-say .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.people-say h4{
+    margin-bottom: 20px;
+}
+.people-say .wrapper img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.people-say .wrapper img:nth-child(4){
+    width: 75px;
+    height: 75px;
+    
+}
+.feedback{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+.feedback .wraps{
+    /* width: 50%; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.feedback .wraps input{
+    width: 350px;
+    height: 40px;
+    padding-left: 15px;
+}
+.feedback .wraps_img{
+    margin-left: 10%;
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.feedback .wraps_img .img img{
+    margin-left: 50px;
+}
+
+
+
+footer{
+    height: 60vh;
+    background-image: url('./img/footer-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.footer-boxes{
+    width: 100%;
+    padding-top: 100px !important;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-box{
+    width: 30%;
+    margin-bottom: 50px;
+}
+.footer-box .quticha{
+    display: flex;
+    align-items: center;
+}
+.footer-box .quticha i{
+    padding: 20px;
+}
+.footer-box h2{
+    margin-bottom: 15px;
+}
+.footer-box input{
+    width: 150px;
+    height: 35px;
+}
+.footer-box .rasmli{
+    margin-left: 20px;
+    width: 75px;
+    height: 37.5px;
+}
+.footer-box:nth-child(3) div{
+    display: flex;
+    align-items: center;
+}
+.footer-boxes_2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+}
+a:nth-child(1){
+    margin-left: 30px;
+}
+a:nth-child(3){
+    margin-right: 730px;
+}
